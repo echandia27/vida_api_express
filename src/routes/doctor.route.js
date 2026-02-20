@@ -2,7 +2,7 @@ import { Router } from "express";
 import { create, getAll } from '../controllers/doctor.controller.js';
 
 
-export const router = Router();
+export const doctorRoutes = Router();
 
-router.get('/doctors', getAll);
-router.post('/doctors', create);
+doctorRoutes.get('/', getAll);
+doctorRoutes.post('/', create);
