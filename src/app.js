@@ -6,7 +6,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use('/doctors', doctorRoutes);
-app.use('/appointments', appointmentRoutes);
+//app.use('/doctors', doctorRoutes);
+//app.use('/appointments', appointmentRoutes);
 
 export default app;
