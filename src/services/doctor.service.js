@@ -30,3 +30,17 @@ export const getAllDoctors = async () => {
     }
 
 }
+
+export const deleteDoctor = async (id) => {
+
+    const query = 'DELETE FROM test.doctor WHERE id = $1 RETURNING id';
+    const values = [id]
+
+    try {
+        const response = await pool.query(query, values);
+        return response;
+    } catch (error) {
+        console.error('Error al eliminar un doctor')
+        throw error;
+    }
+}

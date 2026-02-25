@@ -1,4 +1,4 @@
-import { createDoctor, getAllDoctors, /*deleteDoctor*/ } from "../services/doctor.service.js";
+import { createDoctor, getAllDoctors, deleteDoctor } from "../services/doctor.service.js";
 
 export const create = async (req, res) => {
 
