@@ -26,7 +26,7 @@ export const deleteById = async (req, res) => {
     try {
         const deletedDoctor = await deleteDoctor(id);
 
-        if (!deletedDoctor. rowCount === 0) {
+        if (!deletedDoctor.rowCount === 0) {
             return res.status(500).json({ error: "no se ha podido eliminar el doctor"});
         }
 
